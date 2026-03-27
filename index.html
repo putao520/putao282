@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    padding: 20px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 48px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 28px;
+  }
+
+  .qr-wrapper {
+    display: inline-block;
+    padding: 16px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+  }
+
+  .qr-wrapper img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .tip {
+    margin-top: 24px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .tip strong {
+    color: #07c160;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">扫码添加微信</div>
+    <div class="subtitle">专属顾问 · 一对一服务</div>
+    <div class="qr-wrapper">
+      <img src="https://raw.githubusercontent.com/putao520/putao282/master/wx.jpg" alt="微信二维码">
+    </div>
+    <div class="tip">打开 <strong>微信</strong> 扫一扫<br>即可联系销售顾问</div>
+  </div>
+</body>
+</html>
