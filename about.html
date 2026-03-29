@@ -120,17 +120,22 @@
         <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05a6.127 6.127 0 01-.235-1.676c0-3.793 3.527-6.87 7.879-6.87.243 0 .482.012.718.031C17.084 4.635 13.227 2.188 8.691 2.188zm-2.85 4.56a1.1 1.1 0 11-.001 2.2 1.1 1.1 0 01.001-2.2zm5.701 0a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM23.997 15.39c0-3.248-3.236-5.882-7.229-5.882-3.992 0-7.228 2.634-7.228 5.882 0 3.248 3.236 5.882 7.228 5.882.852 0 1.67-.123 2.435-.346a.71.71 0 01.588.082l1.535.9a.268.268 0 00.136.044c.132 0 .24-.108.24-.243 0-.058-.024-.117-.04-.174l-.316-1.2a.482.482 0 01.175-.546c1.548-1.126 2.476-2.797 2.476-4.6zm-9.724-1.42a.915.915 0 110 1.83.915.915 0 010-1.83zm4.99 0a.915.915 0 110 1.83.915.915 0 010-1.83z"/>
       </svg>
     </div>
-    <div class="title">扫码添加微信</div>
-    <div class="subtitle">专属顾问 · 一对一服务</div>
+    <div class="title" data-i18n="title"></div>
+    <div class="subtitle" data-i18n="subtitle"></div>
     <div class="qr-wrapper">
       <img src="wx.jpg" alt="微信二维码">
     </div>
-    <div class="tip">长按或扫描二维码<br>打开<strong>微信</strong>联系销售顾问</div>
+    <div class="tip" data-i18n="tip"></div>
     <div class="tags">
-      <span class="tag">即时响应</span>
-      <span class="tag">专业咨询</span>
-      <span class="tag">免费报价</span>
+      <span class="tag" data-i18n="tag1"></span>
+      <span class="tag" data-i18n="tag2"></span>
+      <span class="tag" data-i18n="tag3"></span>
     </div>
   </div>
+<script>
+var lang=(localStorage.getItem('i18nextLng')||'zh').startsWith('zh')?'zh':'en';
+var t={zh:{title:'扫码添加微信',subtitle:'专属顾问 · 一对一服务',tip:'长按或扫描二维码<br>打开<strong>微信</strong>联系销售顾问',tag1:'即时响应',tag2:'专业咨询',tag3:'免费报价'},en:{title:'Scan to Add WeChat',subtitle:'Dedicated Consultant · 1-on-1 Service',tip:'Long press or scan the QR code<br>Open <strong>WeChat</strong> to contact sales',tag1:'Instant Reply',tag2:'Expert Advice',tag3:'Free Quote'}};
+document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');if(t[lang][k])el.innerHTML=t[lang][k]});
+</script>
 </body>
 </html>

@@ -204,8 +204,8 @@
   </div>
 
   <div class="badge">Smart AI Gateway</div>
-  <h1>专注开发编程与<br><em>OpenClaw</em> 的智能网关</h1>
-  <p class="hero-desc">统一接入 Claude、Gemini、OpenAI 等主流大模型，为开发编程与 OpenClaw 场景提供一站式智能 AI 网关服务。</p>
+  <h1 data-i18n="title"></h1>
+  <p class="hero-desc" data-i18n="desc"></p>
 
   <div class="model-tags">
     <span class="model-tag">
@@ -224,6 +224,12 @@
   </div>
 
 </section>
+
+<script>
+var lang=(localStorage.getItem('i18nextLng')||'zh').startsWith('zh')?'zh':'en';
+var t={zh:{title:'专注开发编程与<br><em>OpenClaw</em> 的智能网关',desc:'统一接入 Claude、Gemini、OpenAI 等主流大模型，为开发编程与 OpenClaw 场景提供一站式智能 AI 网关服务。'},en:{title:'Smart AI Gateway for<br><em>Dev Coding</em> & OpenClaw',desc:'Unified access to Claude, Gemini, OpenAI and more. One-stop smart AI gateway for dev coding and OpenClaw scenarios.'}};
+document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.getAttribute('data-i18n');if(t[lang][k])el.innerHTML=t[lang][k]});
+</script>
 
 </body>
 </html>
