@@ -6,5 +6,6 @@
 - `{filename}_en.html` — 英文版
 
 当前页面：
-- `index.html` / `index_cn.html` / `index_en.html` — 首页 Hero
-- `about.html` / `about_cn.html` / `about_en.html` — 关于我们（微信联系页）
+- `index.html` / `index_en.html` — 首页 Hero
+- `about.html` / `about_en.html` — 关于我们（微信联系页）
+- `footer.html` / `footer_en.html` — NewAPI 自定义页脚（注入用）
